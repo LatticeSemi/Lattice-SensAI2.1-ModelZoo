@@ -1,3 +1,4 @@
+// Test Edit
 //////////////////////////////////////////////////////////////////////////////
 // Copyright (c) 2009, SiliconBlue Technologies, Inc.
 //////////////////////////////////////////////////////////////////////////////
@@ -9,7 +10,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////
 //
-// SILICONBLUE TECHNOLOGIES PROVIDES THIS APPLICATION NOTE TO YOU ìAS-ISî.
+// SILICONBLUE TECHNOLOGIES PROVIDES THIS APPLICATION NOTE TO YOU ‚ÄúAS-IS‚Äù.
 // ALL WARRANTIES, REPRESENTATIONS, OR GUARANTEES OF ANY KIND (WHETHER
 // EXPRESS, IMPLIED, OR STATUTORY) INCLUDING, WITHOUT LIMITATION, WARRANTIES
 // OF MERCHANTABILITY, NON-INFRINGEMENT, OR FITNESS FOR A PARTICULAR PURPOSE,
@@ -102,7 +103,7 @@
 //               Fixed some race conditions in the i2c-slave model.
 //               Added debug information.
 //               Added headers.
-//
+//		
  
 `timescale 1 ns / 1 ps
  
