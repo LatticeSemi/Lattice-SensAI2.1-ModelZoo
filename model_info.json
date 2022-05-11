@@ -2351,7 +2351,7 @@
 			"target_application": "Object Detection",
 			"target_class": "CNN",
 			"input_dim": "224x224",
-			"target_network": "Resnet + SqueezeDet",
+			"target_network": "ResNet + SqueezeDet",
 			"target_framework": "TensorFlow",
 			"target_framework_version": "1.14.0",
 			"sensAI_version": "['V2.1.0-Beta', 'V3.0', 'V3.1']",
