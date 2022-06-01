@@ -229,6 +229,100 @@
 		}
 	},
 	{
+	"model_name": "Potrait Segmentation Crosslink-NX-ENET",
+	"git_url":	"https://github.com/LatticeSemi/Semantic-Segmentation.git -b Crosslink-NX-ENET",
+	"model_spec": {
+		"target_device": "Crosslink-NX",
+		"target_application": "Segmentation",
+		"target_class": "CNN",
+		"input_dim": "160x160",
+		"target_network": "ENET",
+		"target_framework": "TensorFlow",
+		"target_framework_version": "1.14.0",
+		"sensAI_version": "['V3.0', 'V3.1','V4.0','v4.1','v5.0']",
+		"dataset_type": "OTHER",
+		"other_param": ""
+	},
+	"sections": {
+		"training": {
+			"_comment": "Optional parameter: This determines that whether train section is available or not.",
+			"command": {
+				"run_type": "python3"
+			},
+			"execution_script": {
+				"name": "Execution Script",
+				"default": "train.py",
+				"type": "file",
+				"required": true
+			},
+			"train_dataset_dir": {
+				"name": "Training Dataset",
+				"type": "dir",
+				"sub_type": "dataset",
+				"required": true
+			},
+			"val_dataset_dir": {
+				"name": "Validation Dataset",
+				"sub_type": "dataset",
+				"type": "dir",
+				"required": true
+			},
+			"num_epochs": {
+				"name": "Number of Epochs",
+				"default": "300",
+				"type": "int",
+				"required": true
+			},
+			"logdir": {
+				"name": "Checkpoint Path",
+				"type": "dir",
+				"sub_type": "checkpoint",
+				"required": true
+			}
+		},
+		"tensorboard": {
+			"_comment": "optional",
+			"command": {
+				"run_type": "tensorboard"
+			},
+			"logdir": {
+				"name": "Eventfile Path",
+				"type": "dir",
+				"sub_type": "artefacts",
+				"required": true
+			},
+			"port": {
+				"name": "Tensorboard Port",
+				"default": "6006",
+				"type": "int",
+				"required": true
+			}
+		},
+		"freeze": {
+			"_comment": "optional",
+			"command": {
+				"run_type": "python3"
+			},
+			"execution_script": {
+				"name": "Execution Script",
+				"default": "genpb.py",
+				"type": "file",
+				"required": true
+			},
+			"ckpt_dir": {
+				"name": "Checkpoint Path",
+				"type": "dir",
+				"sub_type": "artefacts",
+				"required": true
+			}
+		}
+	},
+	"SensAI": {
+		"device": "CrossLink-NX",
+		"scale": 0.0078125
+	}
+},
+	{
 		"model_name": "Human Count Crosslink-NX-GoogleNet",
 		"git_url": "https://github.com/LatticeSemi/Human-Count.git -b Crosslink-NX-GoogleNet",
 		"model_spec": {
