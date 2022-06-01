@@ -238,7 +238,7 @@
 		"input_dim": "160x160",
 		"target_network": "ENET",
 		"target_framework": "TensorFlow",
-		"target_framework_version": "1.14.0",
+		"target_framework_version": "1.15.0",
 		"sensAI_version": "['V3.0', 'V3.1','V4.0','v4.1','v5.0']",
 		"dataset_type": "OTHER",
 		"other_param": ""
