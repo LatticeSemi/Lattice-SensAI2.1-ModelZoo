@@ -3696,30 +3696,37 @@
 					"type": "file",
 					"required": true
 				},
-				"dataset_path": {
+				"data_dir": {
 					"name": "Dataset Path",
 					"type": "dir",
 					"sub_type": "dataset",
 					"required": true
 				},
-				"logdir": {
+				"log_dir": {
 					"name": "Checkpoint Path",
 					"type": "dir",
 					"sub_type": "checkpoint",
 					"required": true
 				},
-				"is_gray": {
-					"name": "grayscale",
-					"default": "True",
+				"color_mode": {
+					"name": "Color Model grayscale or rgb",
+					"default": "grayscale",
 					"type": "str",
 					"required": true
 				},
-				"gpu": {
-					"name": "Visible GPUs",
-					"default": "0",
+				"total_train_images": {
+					"name": "Total training images",
+					"default": "10000",
+					"type": "int",
+					"required": true
+				},
+				"epochs": {
+					"name": "number of epochs to train",
+					"default": "50",
 					"type": "int",
 					"required": true
 				}
+				
 			}
 		},
 		"SensAI": {
